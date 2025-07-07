@@ -1,5 +1,11 @@
 # @backstage/plugin-auth-backend
 
+## 0.25.2-next.1
+
+### Patch Changes
+
+- 207778c: Internal refactor of OIDC endpoints and `UserInfoDatabase`
+
 ## 0.25.2-next.0
 
 ### Patch Changes
