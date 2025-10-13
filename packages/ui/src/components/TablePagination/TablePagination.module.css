@@ -13,26 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { PropDef } from './prop-def';
-import { GetPropDefTypes } from './prop-def';
-import { spacingValues } from './spacing.props';
 
-/** @public */
-const gapPropDefs = {
-  gap: {
-    type: 'enum | string',
-    className: 'bui-gap',
-    customProperties: ['--gap'],
-    values: spacingValues,
-    responsive: true,
-    default: '4',
-  },
-} satisfies {
-  gap: PropDef<(typeof spacingValues)[number]>;
-};
+@layer components {
+  .bui-TablePagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--bui-space-5);
+  }
 
-/** @public */
-type GapProps = GetPropDefTypes<typeof gapPropDefs>;
+  .bui-TablePaginationLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-export { gapPropDefs };
-export type { GapProps };
+  .bui-TablePaginationRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--bui-space-2);
+  }
+
+  .bui-TablePaginationSelect {
+    min-width: 10.5rem;
+  }
+}

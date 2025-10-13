@@ -19,10 +19,12 @@ import { useIcons } from './context';
 import type { IconProps } from './types';
 import clsx from 'clsx';
 import { useStyles } from '../../hooks/useStyles';
+import styles from './Icon.module.css';
 
 /** @public */
 export const Icon = (props: IconProps) => {
-  const { name, size, className, style, ...restProps } = props;
+  const { classNames, cleanedProps } = useStyles('Icon', props);
+  const { name, size, className, style, ...restProps } = cleanedProps;
   const { icons } = useIcons();
 
   const BckstageIcon = icons[name] as ComponentType<Omit<IconProps, 'name'>>;
@@ -32,11 +34,9 @@ export const Icon = (props: IconProps) => {
     return null;
   }
 
-  const { classNames } = useStyles('Icon');
-
   return (
     <BckstageIcon
-      className={clsx(classNames.root, className)}
+      className={clsx(classNames.root, styles[classNames.root], className)}
       style={{
         ...(size ? { width: size, height: size } : {}),
         ...style,

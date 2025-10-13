@@ -28,11 +28,11 @@ import type {
   DialogProps,
   DialogBodyProps,
 } from './types';
-import './Dialog.styles.css';
 import { RiCloseLine } from '@remixicon/react';
 import { Button } from '../Button';
 import { useStyles } from '../../hooks/useStyles';
 import { Flex } from '../Flex';
+import styles from './Dialog.module.css';
 
 /** @public */
 export const DialogTrigger = (props: DialogTriggerProps) => {
@@ -41,19 +41,24 @@ export const DialogTrigger = (props: DialogTriggerProps) => {
 
 /** @public */
 export const Dialog = forwardRef<React.ElementRef<typeof Modal>, DialogProps>(
-  ({ className, children, width, height, style, ...props }, ref) => {
-    const { classNames } = useStyles('Dialog');
+  (props, ref) => {
+    const { classNames, cleanedProps } = useStyles('Dialog', props);
+    const { className, children, width, height, style, ...rest } = cleanedProps;
 
     return (
       <Modal
         ref={ref}
-        className={clsx(classNames.overlay)}
+        className={clsx(classNames.overlay, styles[classNames.overlay])}
         isDismissable
         isKeyboardDismissDisabled={false}
-        {...props}
+        {...rest}
       >
         <RADialog
-          className={clsx(classNames.dialog, className)}
+          className={clsx(
+            classNames.dialog,
+            styles[classNames.dialog],
+            className,
+          )}
           style={{
             ['--bui-dialog-min-width' as keyof React.CSSProperties]:
               typeof width === 'number' ? `${width}px` : width || '400px',
@@ -78,12 +83,20 @@ Dialog.displayName = 'Dialog';
 export const DialogHeader = forwardRef<
   React.ElementRef<'div'>,
   DialogHeaderProps
->(({ className, children, ...props }, ref) => {
-  const { classNames } = useStyles('Dialog');
+>((props, ref) => {
+  const { classNames, cleanedProps } = useStyles('Dialog', props);
+  const { className, children, ...rest } = cleanedProps;
 
   return (
-    <Flex ref={ref} className={clsx(classNames.header, className)} {...props}>
-      <Heading slot="title" className={classNames.headerTitle}>
+    <Flex
+      ref={ref}
+      className={clsx(classNames.header, styles[classNames.header], className)}
+      {...rest}
+    >
+      <Heading
+        slot="title"
+        className={clsx(classNames.headerTitle, styles[classNames.headerTitle])}
+      >
         {children}
       </Heading>
       <Button name="close" aria-label="Close" variant="tertiary" slot="close">
@@ -96,11 +109,16 @@ DialogHeader.displayName = 'DialogHeader';
 
 /** @public */
 export const DialogBody = forwardRef<React.ElementRef<'div'>, DialogBodyProps>(
-  ({ className, children, ...props }, ref) => {
-    const { classNames } = useStyles('Dialog');
+  (props, ref) => {
+    const { classNames, cleanedProps } = useStyles('Dialog', props);
+    const { className, children, ...rest } = cleanedProps;
 
     return (
-      <div className={clsx(classNames.body, className)} ref={ref} {...props}>
+      <div
+        className={clsx(classNames.body, styles[classNames.body], className)}
+        ref={ref}
+        {...rest}
+      >
         {children}
       </div>
     );
@@ -113,11 +131,16 @@ DialogBody.displayName = 'DialogBody';
 export const DialogFooter = forwardRef<
   React.ElementRef<'div'>,
   React.ComponentPropsWithoutRef<'div'>
->(({ className, children, ...props }, ref) => {
-  const { classNames } = useStyles('Dialog');
+>((props, ref) => {
+  const { classNames, cleanedProps } = useStyles('Dialog', props);
+  const { className, children, ...rest } = cleanedProps;
 
   return (
-    <div ref={ref} className={clsx(classNames.footer, className)} {...props}>
+    <div
+      ref={ref}
+      className={clsx(classNames.footer, styles[classNames.footer], className)}
+      {...rest}
+    >
       {children}
     </div>
   );
