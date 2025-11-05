@@ -24912,7 +24912,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.0.0, axios@npm:^1.13.0, axios@npm:^1.6.0, axios@npm:^1.7.4, axios@npm:^1.8.3, axios@npm:^1.9.0":
+"axios@npm:^1.0.0, axios@npm:^1.13.0, axios@npm:^1.7.4, axios@npm:^1.8.3, axios@npm:^1.9.0":
   version: 1.13.2
   resolution: "axios@npm:1.13.2"
   dependencies:
@@ -36476,8 +36476,8 @@ __metadata:
   linkType: hard
 
 "ldapts@npm:^8.0.6":
-  version: 8.0.6
-  resolution: "ldapts@npm:8.0.6"
+  version: 8.0.9
+  resolution: "ldapts@npm:8.0.9"
   dependencies:
     "@types/asn1": "npm:>=0.2.4"
     asn1: "npm:0.2.6"
@@ -36485,7 +36485,7 @@ __metadata:
     strict-event-emitter-types: "npm:2.0.0"
     uuid: "npm:11.1.0"
     whatwg-url: "npm:14.2.0"
-  checksum: 10/583fdf70762858fab1fc660670f482aa146481b4247b6e34eebe56628c7c069fe4167584c4159b3998503de18a716cb845e02b28794bc783de9b8c09834e4b15
+  checksum: 10/512bfec21e2c5d8a257ffda0c426221023043718b235dcc21d5ea81ba43d1999a2f14c1e9d6f7db7af1af2c467b46ee7016cac8da74ebae900fe208c54435b0e
   languageName: node
   linkType: hard
 
@@ -38562,14 +38562,14 @@ __metadata:
   linkType: hard
 
 "mini-css-extract-plugin@npm:^2.4.2, mini-css-extract-plugin@npm:^2.9.2":
-  version: 2.9.3
-  resolution: "mini-css-extract-plugin@npm:2.9.3"
+  version: 2.9.4
+  resolution: "mini-css-extract-plugin@npm:2.9.4"
   dependencies:
     schema-utils: "npm:^4.0.0"
     tapable: "npm:^2.2.1"
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 10/55bcc341af9e472c3b8010aa1a8a0212aef78eb8a76d07e3f9d5646b357af03ab4cae0dabfb03be8e0476064f36ab415be2fa65682b6acdb420805c67cdee4c6
+  checksum: 10/24a0418dc49baed58a10a8b81e4d2fe474e89ccdc9370a7c69bd0aeeb5a70d2b4ee12f33b98c95a68423c79c1de7cc2a25aaa2105600b712e7d594cb0d56c9d4
   languageName: node
   linkType: hard
 
@@ -39750,9 +39750,9 @@ __metadata:
   linkType: hard
 
 "nodemailer@npm:^7.0.7":
-  version: 7.0.9
-  resolution: "nodemailer@npm:7.0.9"
-  checksum: 10/88883c58afe356d2b4c24b1e976c04857e8a7a7145e1752dab69072900b0cc2e3daa0964a08c653e692fb64382453e1cfcee3d863828844c8d6f6239727b9023
+  version: 7.0.10
+  resolution: "nodemailer@npm:7.0.10"
+  checksum: 10/b9b8794ffc6c0d84440a9dd422664908e9c2003a15cb0e6bdd240a3625121de3978323c2ba4af78080fd735ef514d6caed376bd5f5dd6c17cf0d2c399d0dc354
   languageName: node
   linkType: hard
 
@@ -41035,13 +41035,13 @@ __metadata:
   linkType: hard
 
 "passport-auth0@npm:^1.4.3":
-  version: 1.4.4
-  resolution: "passport-auth0@npm:1.4.4"
+  version: 1.4.5
+  resolution: "passport-auth0@npm:1.4.5"
   dependencies:
-    axios: "npm:^1.6.0"
+    axios: "npm:^1.7.4"
     passport-oauth: "npm:^1.0.0"
     passport-oauth2: "npm:^1.6.0"
-  checksum: 10/307d2d8d687a29dbe2fc98fbee1cc948f76e936c6ae7ffeb28076c98b558a942be1cbc0eedb58d9003285bf4e816f6e971b0edb7a604d290272b1ba8e731006d
+  checksum: 10/e9e40e82862f75312ffd0dbed09cd62693008551b07e7ada75725597c3763361aa2f3070ea485e70219572a23d459ea03553dd8f2c5d683ece83577007bdf5b9
   languageName: node
   linkType: hard
 
@@ -41728,12 +41728,12 @@ __metadata:
   linkType: hard
 
 "portfinder@npm:^1.0.28, portfinder@npm:^1.0.32":
-  version: 1.0.37
-  resolution: "portfinder@npm:1.0.37"
+  version: 1.0.38
+  resolution: "portfinder@npm:1.0.38"
   dependencies:
     async: "npm:^3.2.6"
     debug: "npm:^4.3.6"
-  checksum: 10/0d9addb4b28451319bc95feb7af6c060188e176199eebd1b66ef7ea460102e546aedcd6dc7039c5942812c9696218403106e2a45b66a8c551888fc18830b0014
+  checksum: 10/369155c3e7efa10ad348cd6686eb9efe57f334a4638f9107fd6ad6705dc532841f9bd8346182591280b2c7837600d8fb0cf0d1ced69a78caa8544fc3bb43653a
   languageName: node
   linkType: hard
 
@@ -42923,11 +42923,11 @@ __metadata:
   linkType: hard
 
 "rate-limit-redis@npm:^4.2.0":
-  version: 4.2.1
-  resolution: "rate-limit-redis@npm:4.2.1"
+  version: 4.2.3
+  resolution: "rate-limit-redis@npm:4.2.3"
   peerDependencies:
     express-rate-limit: ">= 6"
-  checksum: 10/c36c50cfca992cbd14c97c08bb01c7d1d340d27b5fa1a2c1154275fec0b59c187eb6fb207da3d035c7c87e7629c92324cd53074f854dbb16548faf94f5a41351
+  checksum: 10/00c95868e48214b926272b2f01418695acd0487f766d36fec68992922037d43e67eeacc6854f38b8a511c69b9385b2de6994d08802a6aa422686dfd4c55e5ba0
   languageName: node
   linkType: hard
 
@@ -43606,12 +43606,12 @@ __metadata:
   linkType: hard
 
 "react-resizable-panels@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "react-resizable-panels@npm:3.0.4"
+  version: 3.0.6
+  resolution: "react-resizable-panels@npm:3.0.6"
   peerDependencies:
     react: ^16.14.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
     react-dom: ^16.14.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
-  checksum: 10/92b8ac224d3c60c7c8ea0d80f712d9cd719afad76d4f1a5b8c8cc7c886b77f1d5058fa622ea057f28f5f7fc1a2c86e38e14d7b0f33722c30bff02e37f9fba705
+  checksum: 10/cacd2a0a63e4ecca193ceb2c8369d760946987c6386e38be39c7f98f909db923f161dbfd5187c289f5093c035c4a7757c4bd30b0d792bd8b45f2bc64183fe47f
   languageName: node
   linkType: hard
 
@@ -45341,11 +45341,11 @@ __metadata:
   linkType: hard
 
 "semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.1.2, semver@npm:^7.1.3, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8, semver@npm:^7.5.2, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.2":
-  version: 7.7.2
-  resolution: "semver@npm:7.7.2"
+  version: 7.7.3
+  resolution: "semver@npm:7.7.3"
   bin:
     semver: bin/semver.js
-  checksum: 10/7a24cffcaa13f53c09ce55e05efe25cd41328730b2308678624f8b9f5fc3093fc4d189f47950f0b811ff8f3c3039c24a2c36717ba7961615c682045bf03e1dda
+  checksum: 10/8dbc3168e057a38fc322af909c7f5617483c50caddba135439ff09a754b20bdd6482a5123ff543dad4affa488ecf46ec5fb56d61312ad20bb140199b88dfaea9
   languageName: node
   linkType: hard
 
@@ -46751,11 +46751,11 @@ __metadata:
   linkType: hard
 
 "strip-ansi@npm:^7.0.1, strip-ansi@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "strip-ansi@npm:7.1.0"
+  version: 7.1.2
+  resolution: "strip-ansi@npm:7.1.2"
   dependencies:
     ansi-regex: "npm:^6.0.1"
-  checksum: 10/475f53e9c44375d6e72807284024ac5d668ee1d06010740dec0b9744f2ddf47de8d7151f80e5f6190fc8f384e802fdf9504b76a7e9020c9faee7103623338be2
+  checksum: 10/db0e3f9654e519c8a33c50fc9304d07df5649388e7da06d3aabf66d29e5ad65d5e6315d8519d409c15b32fa82c1df7e11ed6f8cd50b0e4404463f0c9d77c8d0b
   languageName: node
   linkType: hard
 

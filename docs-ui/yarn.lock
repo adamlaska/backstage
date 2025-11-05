@@ -719,14 +719,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdx-js/mdx@npm:^3.0.0, @mdx-js/mdx@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "@mdx-js/mdx@npm:3.1.0"
+"@mdx-js/mdx@npm:^3.0.0, @mdx-js/mdx@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "@mdx-js/mdx@npm:3.1.1"
   dependencies:
     "@types/estree": "npm:^1.0.0"
     "@types/estree-jsx": "npm:^1.0.0"
     "@types/hast": "npm:^3.0.0"
     "@types/mdx": "npm:^2.0.0"
+    acorn: "npm:^8.0.0"
     collapse-white-space: "npm:^2.0.0"
     devlop: "npm:^1.0.0"
     estree-util-is-identifier-name: "npm:^3.0.0"
@@ -747,19 +748,19 @@ __metadata:
     unist-util-stringify-position: "npm:^4.0.0"
     unist-util-visit: "npm:^5.0.0"
     vfile: "npm:^6.0.0"
-  checksum: 10/4bd4e1160e2b2bc9ea2b5b93246ce0e34a11ac5fd420ec025e82fb1120a72b80025d9cb205cce6394bb5f0013f209b9ea453cbda4c0ca4f97a2169df60084742
+  checksum: 10/b871da2497f6e0f11da1574fe772a50b09b7c177de8df0f821f708bf162febe76c01a572a5c68e860960189209fd66f768c2e747fdb3a1f497c5c32e11890c11
   languageName: node
   linkType: hard
 
-"@mdx-js/react@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "@mdx-js/react@npm:3.1.0"
+"@mdx-js/react@npm:^3.1.0, @mdx-js/react@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "@mdx-js/react@npm:3.1.1"
   dependencies:
     "@types/mdx": "npm:^2.0.0"
   peerDependencies:
     "@types/react": ">=16"
     react: ">=16"
-  checksum: 10/cf89d6392c76091622fb647f205e1ab5cbdf5edd4401dde7092138cefc9fbb6d61428aa63557de0bccca3695d5a8854dd4a93b34a27cb8e27369da7eaeaa3e73
+  checksum: 10/52a740e2f37761694fa94d4704b7825084b4055616a95c8b8f4c1676190d399ddc5cdbb399ffc45b550beecd30497a7224c2e5b05bf43ecb668c7473641037d1
   languageName: node
   linkType: hard
 
@@ -3230,11 +3231,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^12.23.12":
-  version: 12.23.12
-  resolution: "framer-motion@npm:12.23.12"
+"framer-motion@npm:^12.23.24":
+  version: 12.23.24
+  resolution: "framer-motion@npm:12.23.24"
   dependencies:
-    motion-dom: "npm:^12.23.12"
+    motion-dom: "npm:^12.23.23"
     motion-utils: "npm:^12.23.6"
     tslib: "npm:^2.4.0"
   peerDependencies:
@@ -3248,7 +3249,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/c15af3dc22476bf10d7509b9a336d113ed0fbeba57fca81ce5a6bf07f0d659ebc3588c3a839475cbdfc9601b64e2fc7551911e1c806dd2b896603c8a2c0c3870
+  checksum: 10/c46015626d140557f3f225ffeaea14146988a42a99b33e46e3efbab88814343867a63014544169283b9518e1a3abed231ccefd890e601cf66b6c43425b0465e2
   languageName: node
   linkType: hard
 
@@ -5017,12 +5018,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"motion-dom@npm:^12.23.12":
-  version: 12.23.12
-  resolution: "motion-dom@npm:12.23.12"
+"motion-dom@npm:^12.23.23":
+  version: 12.23.23
+  resolution: "motion-dom@npm:12.23.23"
   dependencies:
     motion-utils: "npm:^12.23.6"
-  checksum: 10/e13cbd1f32ad30dc642ebc83f7f35d0fb76c4d93902daebdbbea2cdb85bb07481fb4fe315b3e2c899076dab5490fb611ff803c334b336bc4fcd59b9a1aa6d7ff
+  checksum: 10/6bec34c28b478622bd23ce919c0d64e7f372cbc3f88e665f1e34fbf590e9bb53eebea086fb28f4e0c31941bd5274e086dc9b5360b68c4976891b94c4e92ca01a
   languageName: node
   linkType: hard
 
@@ -5034,10 +5035,10 @@ __metadata:
   linkType: hard
 
 "motion@npm:^12.4.1":
-  version: 12.23.12
-  resolution: "motion@npm:12.23.12"
+  version: 12.23.24
+  resolution: "motion@npm:12.23.24"
   dependencies:
-    framer-motion: "npm:^12.23.12"
+    framer-motion: "npm:^12.23.24"
     tslib: "npm:^2.4.0"
   peerDependencies:
     "@emotion/is-prop-valid": "*"
@@ -5050,7 +5051,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/95670351c14d6925e891fac3d12719ed2e46000366abd38096870c46271071e3f22d0e9fa523809e614ee58aaeb1865fc19398dc8b408c2594512dc0eef392db
+  checksum: 10/d63d951676058001c6f234a6bdf8ed5a8fd222a38c1871ef209ed1fd87f2a288ec0e267fa616d80ac8837d0836a5f93ae85a80d773314517f19f304f25b81c3d
   languageName: node
   linkType: hard
 
@@ -5094,20 +5095,20 @@ __metadata:
   linkType: hard
 
 "next-mdx-remote-client@npm:^2.1.2":
-  version: 2.1.3
-  resolution: "next-mdx-remote-client@npm:2.1.3"
+  version: 2.1.7
+  resolution: "next-mdx-remote-client@npm:2.1.7"
   dependencies:
     "@babel/code-frame": "npm:^7.27.1"
-    "@mdx-js/mdx": "npm:^3.1.0"
-    "@mdx-js/react": "npm:^3.1.0"
-    remark-mdx-remove-esm: "npm:^1.2.0"
+    "@mdx-js/mdx": "npm:^3.1.1"
+    "@mdx-js/react": "npm:^3.1.1"
+    remark-mdx-remove-esm: "npm:^1.2.1"
     serialize-error: "npm:^12.0.0"
     vfile: "npm:^6.0.3"
     vfile-matter: "npm:^5.0.1"
   peerDependencies:
-    react: ^19.1.0
-    react-dom: ^19.1.0
-  checksum: 10/3837c63edf7d707de2eea9b4c565eeb7e505a769e93c2673f746ec9993c644f7cd0aacb8bad911eff9ea63190f48c2c16ffe98d47c39591c5dac29c8bf9a9e0c
+    react: ^19.1
+    react-dom: ^19.1
+  checksum: 10/8aaf6c2f11b0ed398703165c35c0355d1f058521780191684e6fe7e45698effe50ba68b154bae9db84b13e82dff98f380224d588acca6e389aeb73062ecdd31d
   languageName: node
   linkType: hard
 
@@ -5719,16 +5720,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-mdx-remove-esm@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "remark-mdx-remove-esm@npm:1.2.0"
+"remark-mdx-remove-esm@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "remark-mdx-remove-esm@npm:1.2.1"
   dependencies:
     "@types/mdast": "npm:^4.0.4"
     mdast-util-mdxjs-esm: "npm:^2.0.1"
     unist-util-remove: "npm:^4.0.0"
   peerDependencies:
     unified: ^11
-  checksum: 10/0a1155e08395ab73f877948455fc04d7457864f7556617efabecae7ea1b441cec2ca7ee9672e16a6cd56f2a16c57a4778f901e77d19052d1dd245de5bdf4618f
+  checksum: 10/092e95ca0649cfe08c47900d9922172b531e1d60b0f90955f51a7282620a1ae53a95dddde3f8d789cdd114a2d515a9372bc72b3e46200ff6f930bd89f0985982
   languageName: node
   linkType: hard
 
